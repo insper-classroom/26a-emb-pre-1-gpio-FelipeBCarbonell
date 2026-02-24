@@ -19,21 +19,20 @@ int main() {
     int cnt_2 = 0;
 
     while (true) {
-
         if (!gpio_get(BTN_PIN)) {
-            sleep_ms(300);
+            printf("Botao 1: %d\n", cnt_1);  
             cnt_1++;
-            printf("Botao 1: %d\n", cnt_1);
             while (!gpio_get(BTN_PIN)) {
             };
         }
 
         if (!gpio_get(BTN_PIN_2)) {
-            sleep_ms(300);
+            printf("Botao 2: %d\n", cnt_2); 
             cnt_2++;
-            printf("Botao 2: %d\n", cnt_2);
             while (!gpio_get(BTN_PIN_2)) {
             };
         }
-    }
+
+        sleep_ms(10);
+    }   
 }

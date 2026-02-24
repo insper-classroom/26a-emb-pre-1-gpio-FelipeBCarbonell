@@ -16,6 +16,7 @@ int main(void) {
     int arr[NUM_ELEMENTS];
     for(int i = 0; i < NUM_ELEMENTS; i++) {
         arr[i] = i * result;
+        printf("arr[%d] = %d\n", i, arr[i]);
     }
 
     return 0;
