@@ -8,7 +8,8 @@ int multiplyNumbers(int x, int y) {
 }
 
 int main(void) {
-    int a, b = 5; //uninitvar, legacyUninitvar
+    int a = 5;
+    int b = 5;
     int result = multiplyNumbers(a, b);
 
     printf("Result of %d * %d: %d\n", a, b, result);
