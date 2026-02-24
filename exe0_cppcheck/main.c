@@ -15,7 +15,7 @@ int main(void) {
 
     int arr[NUM_ELEMENTS];
     for(int i = 0; i < NUM_ELEMENTS; i++) {
-        arr[i] = i;
+        arr[i] = i * result;
     }
 
     return 0;

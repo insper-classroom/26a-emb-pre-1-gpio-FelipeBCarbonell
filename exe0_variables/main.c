@@ -2,7 +2,7 @@
 
 
 void foo(int *a) {
-    return  a + 1;
+    *a = *a + 1;
 }
 
 void main(void) {
