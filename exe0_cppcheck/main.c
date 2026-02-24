@@ -4,7 +4,7 @@
 #define NUM_ELEMENTS 5
 
 int multiplyNumbers(int x, int y) {
-    int product = x * y;
+    return x * y;
 }
 
 int main(void) {
